@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <style>
+    body { margin:0; padding:0; }
+    .slider img { width: 100%; border-radius: 8px; }
+  </style>
+</head>
+
+<body>
+  <div class="slider">
+    <div><img src="https://example.com/image1.jpg"></div>
+    <div><img src="https://example.com/image2.jpg"></div>
+    <div><img src="https://example.com/image3.jpg"></div>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        dots: true,
+        arrows: true,
+        infinite: true
+      });
+    });
+  </script>
+</body>
+</html>
